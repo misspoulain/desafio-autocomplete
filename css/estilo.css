@@ -1,0 +1,32 @@
+* { box-sizing: border-box; }
+
+body { font-family: 'Open Sans', sans-serif; background-color: #eff1f3; }
+form { width: 65%; padding: 0 10px; position: relative; }
+h1 { text-align: center; font-size: 30px; }
+textarea { width: 100%; height: 500px; font-family: Verdana; border: none; padding: 40px; padding-left: 50px; border-radius: 5px; outline: none; font-size: 13px; background-repeat: no-repeat; }
+textarea.typing { background-image: url(../img/ico-typing.png); }
+textarea.searching { background-image: url(../img/ico-searching.png); }
+.autocomplete { background: #fff; width: 90%; position: absolute; border: solid 1px #ccc; border-radius: 5px; font-size: 13px; display: none; }
+.autocomplete ul { margin: 0; padding: 0; list-style: none; width: 100%; }
+.autocomplete ul.filtros { text-align: center; border-bottom: solid 1px #ccc; overflow: auto; padding: 5px; }
+.autocomplete ul.filtros li { display: inline-block; margin-left: 5px; padding: 5px 10px; cursor: pointer; }
+.autocomplete ul.filtros li.on, .autocomplete ul.filtros li:hover { display: inline-block; background-color: #666; color: #fff; border-radius: 3px; }
+.autocomplete .cont-resultados { max-height: 250px; overflow: auto; }
+.autocomplete ul.resultados { display: table; padding: 10px; }
+.autocomplete ul.resultados li { display: table-row; width: 100%; cursor: pointer; padding: 5px 0; }
+.autocomplete ul.resultados li:hover { background-color: #eef0f2; }
+.autocomplete ul.resultados li > div { display: table-cell; padding: 5px; vertical-align: middle; }
+.autocomplete ul.resultados li > div > span { display: inline-block; width: 100%; }
+.autocomplete ul.resultados li .descricao { padding-left: 42px; background-repeat: no-repeat; background-position: 6px; }
+.autocomplete ul.resultados li.generico .descricao { background-image: url(../img/ico-generico.png); }
+.autocomplete ul.resultados li.referencia .descricao { background-image: url(../img/ico-referencia.png); }
+.autocomplete ul.resultados li .preco { text-align: right; }
+.autocomplete ul.resultados li .principio-ativo, 
+.autocomplete ul.resultados li .titularidade, 
+.autocomplete ul.resultados li .preco-ate { color: #aaa; }
+.autocomplete ul.resultados li .preco-de { font-size: 14px; font-weight: bold; }
+.autocomplete .rodape { width: 100%; border-top: solid 1px #ccc; padding: 15px 15px 5px; }
+.autocomplete .rodape .texto-livre { display: block; text-align: left; min-height: 32px; padding-top: 6px; padding-left: 42px; background-image: url(../img/ico-typing.png); background-repeat: no-repeat; }
+.autocomplete .rodape .powered-by { display: block; text-align: right; font-size: 11px; color: #aaa; }
+.autocomplete .rodape .powered-by a { color: #000; text-decoration: none; }
+
